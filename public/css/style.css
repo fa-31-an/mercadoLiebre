@@ -45,6 +45,10 @@ body {
     background-color: var(--grisC);
 }
 
+img {
+    width: 100%;
+}
+
 /* HEADER */
 
 header {
@@ -92,12 +96,30 @@ header div.burger-menu {
 
 /* SECCIONES */
 
+main.home__productos {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section article {
+    padding: 5px;
+}
+
+main section article div {
+    border-top: 1px solid var(--grisC);
+    padding: 15px;
+    background-color: white;
+}
+
 main section article p {
     font-size: var(--precio);
+    display: block;
 }
 
 main section article h5 {
     font-size: var(--descripcciones);
+    display: block;
 }
 
 /* PRODUCTOS */
