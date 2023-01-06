@@ -114,17 +114,15 @@ main section article div {
     border-top: 1px solid var(--grisC);
     padding: 15px;
     background-color: white;
-    display: none;
 }
 
 main section article p {
     font-size: var(--precio);
-    display: block;
 }
 
 main section article h5 {
     font-size: var(--descripcciones);
-    display: block;
+    display: none;
 }
 
 /* PRODUCTOS */
@@ -165,7 +163,9 @@ footer span {
     }
 
     main section article div {
-        display: block;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article h5 {
+        display: block;
     }
 }
