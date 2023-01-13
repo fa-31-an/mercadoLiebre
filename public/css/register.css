@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url(header.css);
+@import url(footer.css);
+@import url(style.css);
+
+
+/* MAIN */
+
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main form {
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main form div.register--form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+}
+
+main form div.register--form div {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+label {
+    width: auto;
+    padding-left: 5px;
+    text-align: center;
+    display: inline;
+}
+
+input, select {
+    width: 200px;
+    text-align: left;
+    height: 2rem;
+    padding: 5px;
+}
+
+.check {
+    height: 1rem;
+    width: 1rem;
+    padding: 0;
+    display: inline;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+main form div.register--form div.interests div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+main form div.register--form div.btn {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--celeste);
+    border-radius: 5px;
+    width: 200px;
+}
+main form div.register--form div.btn button {
+    border: none;
+    display: block;
+    background-color: var(--celeste);
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 361px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 2rem;
+    }
+
+    header div.burger-menu {
+        display: none;
+    }
+
+    main section article div {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article h5 {
+        display: flex;
+    }
+}

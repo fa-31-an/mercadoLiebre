@@ -1,0 +1,81 @@
+header {
+    background-color: var(--amarillo);
+    padding: 25px 0;
+    width: 100%;
+}
+
+header div.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header div div.logo {
+    width: 50%;
+    max-width: 250px;
+}
+
+header div div.busqueda {
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    border: none;
+    padding: 6px;
+}
+
+header div div.busqueda input {
+    width: 80%;
+    max-height: 36px;
+}
+
+header div div.busqueda button {
+    width: 20%;
+    max-width: 36px;
+    max-height: 36px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+header div p {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-right: 25px;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul.lista-superior {
+    margin-bottom: 15px;
+}
+
+header nav ul li a {
+    font-size: var(--parrafos);
+}
+
+header div.burger-menu {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: white;
+    width: 30px;
+    padding: 7px;
+    /* cuando margin tiene dos valores, el izq es top-bottom,
+    el der es left-right */
+    /* 3 valores, top (right-left) bottom */
+    /* 4 valores top right bottom left */
+    margin: 0 auto 0;
+    text-align: center;
+}

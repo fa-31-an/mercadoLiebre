@@ -10,6 +10,12 @@ app.get("/", (req, res) => {
 app.get("/home", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/home.html"))
 });
+app.get("/login", (req, res) => {
+    res.sendFile(path.join(__dirname, "/views/login.html"))
+});
+app.get("/register", (req, res) => {
+    res.sendFile(path.join(__dirname, "/views/register.html"))
+});
 
 app.listen("3000", () =>{
     console.log("The server is ON at port 3000");

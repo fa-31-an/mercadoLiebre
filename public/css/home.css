@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url(header.css);
+@import url(footer.css);
+@import url(style.css);
+
+
+
+/* SECCIONES */
+
+main.home__productos {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main section article.seccion__productos--tarjetas {
+    padding: 5px;
+    max-width: 320px;
+    display: inline-block;
+}
+
+main section article div.descripcion {
+    border-top: 1px solid var(--grisC);
+    padding: 15px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article div i {
+    color: var(--verde);
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+}
+
+main section article div p {
+    font-size: var(--precio);
+}
+
+main section article div p.precio {
+    display: block;
+    width: 30%;
+}
+
+main section article div p.descuento {
+    display: block;
+    width: 70%;
+    color: var(--verde)
+}
+
+main section article h5 {
+    font-size: var(--descripcciones);
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 361px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 2rem;
+    }
+
+    header div.burger-menu {
+        display: none;
+    }
+
+    main section article div {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article h5 {
+        display: flex;
+    }
+}
