@@ -50,22 +50,29 @@ main form div input {
 }
 
 main form div.btn {
-    padding: 5px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--celeste);
     border-radius: 5px;
     width: 200px;
 }
 
 main form div button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
     border: none;
+    border-radius: 5px;
     display: block;
     background-color: var(--celeste);
     color: white;
     font-weight: 700;
 }
 
+main form div button:hover {
+    background-color: #0022aa;
+}
 
 /* MEDIA QUERIES */
 
